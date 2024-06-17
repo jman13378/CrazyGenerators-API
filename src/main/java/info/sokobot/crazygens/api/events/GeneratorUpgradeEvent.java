@@ -7,7 +7,7 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import info.sokobot.crazygens.api.objects.Generator;
+import info.sokobot.crazygens.objects.config.Generator;
 import lombok.Getter;
 
 /**
@@ -30,12 +30,10 @@ public class GeneratorUpgradeEvent extends Event implements Cancellable {
         this.isCancelled = false;
     }
 
-	@Override
 	public boolean isCancelled() {
 		return this.isCancelled;
 	}
 
-	@Override
 	public void setCancelled(boolean isCancelled) {
 		this.isCancelled = isCancelled;
 	}
