@@ -3,6 +3,10 @@
 	<groupId>info.sokobot.crazygens.api</groupId>
 	<artifactId>Crazy-Generators-API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>API for CrazyGenerators</name>
+	<url>https://jitpack.io/#jman13378/CrazyGenerators-API</url>
 	<repositories>
 		<repository>
 			<id>spigot-repo</id>
@@ -19,4 +23,44 @@
 		</dependency>
 
 	</dependencies>
+	 <build>
+    <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+        <configuration> <!-- Compile java 7 compatible bytecode -->
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>  <!-- Create sources.jar -->
+            <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+      </plugin>
+            
+      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
