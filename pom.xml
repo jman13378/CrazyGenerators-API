@@ -7,6 +7,13 @@
 
 	<name>API for CrazyGenerators</name>
 	<url>https://jitpack.io/#jman13378/CrazyGenerators-API</url>
+	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<name>Central Repository OSSRH</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 	<repositories>
 		<repository>
 			<id>spigot-repo</id>
