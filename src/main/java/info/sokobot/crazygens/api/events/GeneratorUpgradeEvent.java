@@ -26,14 +26,16 @@ public class GeneratorUpgradeEvent extends Event implements Cancellable {
 	}
 
 	public GeneratorUpgradeEvent(Generator generator) {
-        this.generator = generator;
-        this.isCancelled = false;
-    }
+		this.generator = generator;
+		this.isCancelled = false;
+	}
 
+	@Override
 	public boolean isCancelled() {
 		return this.isCancelled;
 	}
 
+	@Override
 	public void setCancelled(boolean isCancelled) {
 		this.isCancelled = isCancelled;
 	}

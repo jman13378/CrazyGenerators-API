@@ -30,11 +30,12 @@ public class GeneratorPlaceEvent extends Event implements Cancellable {
 		this.isCancelled = false;
 	}
 
+	@Override
 	public boolean isCancelled() {
 		return this.isCancelled;
 	}
 
-	
+	@Override
 	public void setCancelled(boolean isCancelled) {
 		this.isCancelled = isCancelled;
 	}
