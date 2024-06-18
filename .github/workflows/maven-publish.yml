@@ -1,6 +1,6 @@
 name: Publish package to the Maven Central Repository
 on: push
-jobs:
+jobs: 
   publish:
     runs-on: ubuntu-latest
     steps:
