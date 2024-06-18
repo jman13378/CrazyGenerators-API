@@ -7,7 +7,7 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import info.sokobot.crazygens.objects.config.Generator;
+import info.sokobot.crazygens.api.objects.Generator;
 import lombok.Getter;
 
 /**
